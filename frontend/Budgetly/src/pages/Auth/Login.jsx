@@ -48,8 +48,7 @@ const Login = () => {
             label="Email Address"
             placeholder="john@example.com"
             type="text"
-          >
-          </Input>
+          />
 
           <Input
             value={password}
@@ -57,8 +56,7 @@ const Login = () => {
             label="Password"
             placeholder="Min 8 Characters"
             type="password"
-          >
-          </Input>
+          />
 
           {
             error && (
@@ -73,7 +71,7 @@ const Login = () => {
           <p className='text-[13px] text-slate-800 mt-3'>
             Dont't have an account?{" "}
             <Link className="font-medium text-primary underline" to="/signup">
-              SignUp
+              Sign Up
             </Link>
           </p>
 
