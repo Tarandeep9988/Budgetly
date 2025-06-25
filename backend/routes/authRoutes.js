@@ -13,7 +13,7 @@ router.post("/register", registerUser);
 
 router.post("/login", loginUser);
 
-router.get("/getUser", protect, getUserInfo);
+router.get("/get-user", protect, getUserInfo);
 
 router.post("/upload-image", upload.single("image"), (req, res) => {
     if (!req.file) {
