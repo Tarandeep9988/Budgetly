@@ -1,9 +1,12 @@
 import React, { Children, useContext } from 'react'
 import { UserContext } from '../../context/userContext'
 import Navbar from './Navbar'
+import SideMenu from './SideMenu'
 
 const DashboardLayout = ({ children, activeMenu }) => {
     const { user } = useContext(UserContext)
+    console.log(user);
+    
   return (
     <div className="">
         <Navbar activeMenu={activeMenu} />
@@ -12,7 +15,7 @@ const DashboardLayout = ({ children, activeMenu }) => {
             user && (
                 <div className='flex'>
                     <div className='max-[1080px]:hidden'>
-                        {/* <SideMenu activeMenu={activeMenu} /> */}
+                        <SideMenu activeMenu={activeMenu} />
                     </div>
                     
                     <div className='grow mx-5'>
